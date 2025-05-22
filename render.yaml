@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: eurusd-bot
+    env: python
+    plan: free
+    branch: main
+    startCommand: python eurusd_bot_ready_planA.py
+    buildCommand: pip install -r requirements.txt
